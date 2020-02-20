@@ -1,9 +1,10 @@
 extends Node2D
 
 onready var Camera = $Camera
+var trauma = .5
 
 func _ready():
-	pass
-
+	set_process(true);
+ 
 func _physics_process(delta):
-	pass
+	$Camera.add_trauma(.5) 
